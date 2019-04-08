@@ -62,6 +62,7 @@
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Gender"
@@ -69,16 +70,19 @@
                 android:layout_marginBottom="10dp"/>
 
             <RadioGroup
+                android:id="@+id/rGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginBottom="10dp">
                 <RadioButton
+                    android:id="@+id/radiomale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Male"
                     android:textSize="25sp"/>
                 <RadioButton
+                    android:id="@+id/radiofemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Female"
@@ -86,7 +90,7 @@
             </RadioGroup>
 
             <EditText
-                android:id="@+id/content"
+                android:id="@+id/kontent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lines="5"
@@ -104,7 +108,9 @@
                 android:hint="Tanggal"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                android:clickable="true"
+                android:focusable="false"/>
 
             <EditText
                 android:id="@+id/phone"
